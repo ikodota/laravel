@@ -5,12 +5,15 @@ return array(
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
+	| 应用程序调试模式
 	|--------------------------------------------------------------------------
 	|
 	| When your application is in debug mode, detailed error messages with
 	| stack traces will be shown on every error that occurs within your
 	| application. If disabled, a simple generic error page is shown.
 	|
+	| 当处于调试模式，将会详细的通过堆栈跟踪的方式显示所有的错误，如果禁止，
+	| 只会显示一个简单的错误页面。
 	*/
 
 	'debug' => true,
@@ -24,6 +27,8 @@ return array(
 	| the Artisan command line tool. You should set this to the root of
 	| your application so that it is used when running Artisan tasks.
 	|
+	| 当使用Artisan命令行工具时，这个URL被用于生成一些正确的URLs，
+	| 你应该把它设置为你应用程序设置一个根，以便执行Artisan的任务时使用。
 	*/
 
 	'url' => 'http://localhost',
@@ -37,6 +42,7 @@ return array(
 	| will be used by the PHP date and date-time functions. We have gone
 	| ahead and set this to a sensible default for you out of the box.
 	|
+	| 设置默认时区。
 	*/
 
 	'timezone' => 'UTC',
@@ -50,6 +56,7 @@ return array(
 	| by the translation service provider. You are free to set this value
 	| to any of the locales which will be supported by the application.
 	|
+	| 设置本地语言配置
 	*/
 
 	'locale' => 'en',
@@ -63,6 +70,7 @@ return array(
 	| to a random, 32 character string, otherwise these encrypted strings
 	| will not be safe. Please do this before deploying an application!
 	|
+	| 设置加密字符串，你应该在部署应用程序之前，设置32位随机字符，否则是不安全的。
 	*/
 
 	'key' => 'YourSecretKey!!!',
@@ -70,12 +78,15 @@ return array(
 	/*
 	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
+	| 自动载入服务提供商
 	|--------------------------------------------------------------------------
 	|
 	| The service providers listed here will be automatically loaded on the
 	| request to your application. Feel free to add your own services to
 	| this array to grant expanded functionality to your applications.
 	|
+	| 这里列出的服务提供商将在要求您的应用程序会自动加载。
+	| 可自由的在数组中为将您的应用程序添加服务。
 	*/
 
 	'providers' => array(
@@ -112,12 +123,15 @@ return array(
 	/*
 	|--------------------------------------------------------------------------
 	| Service Provider Manifest
+	| 服务提供商清单
 	|--------------------------------------------------------------------------
 	|
 	| The service provider manifest is used by Laravel to lazy load service
 	| providers which are not needed for each request, as well to keep a
 	| list of all of the services. Here, you may set its storage spot.
 	|
+	| 服务提供商清单是通过Laravel延迟加载（动态加载）服务提供商，不是每个用户请求都需要，
+	| 同样的保持这个清单的所有的服务，你可以设置他们的存储位置。
 	*/
 
 	'manifest' => storage_path().'/meta',
@@ -125,12 +139,16 @@ return array(
 	/*
 	|--------------------------------------------------------------------------
 	| Class Aliases
+	| 类别名
 	|--------------------------------------------------------------------------
 	|
 	| This array of class aliases will be registered when this application
 	| is started. However, feel free to register as many as you wish as
 	| the aliases are "lazy" loaded so they don't hinder performance.
 	|
+	| 在应用程序开启的时候，这个数组中类的别名将会被注册，然后，随意注册多少个别名，
+	| 它们是延迟加载（动态加载），因此不会有性能损失。
+	| 译注：可以为带命名空间的类设定一个别名，以便在程序中方便调用。
 	*/
 
 	'aliases' => array(
