@@ -46,7 +46,7 @@ $env = $app->detectEnvironment(array(
 | should not be changing these here. If you need to change these you
 | may do so within the paths.php file and they will be bound here.
 |
-| 这里我们将把在paths.php中设置的路径绑定到你的应用程序中，你不应该更改这里。
+| 在这里我们将把在paths.php中设置的路径绑定到你的应用程序中，你不应该更改这里。
 | 如果你不得不改变的话，你可以在paths.php文件修改，他们就会绑定到这里。
 */
 
@@ -62,7 +62,7 @@ $app->bindInstallPaths(require __DIR__.'/paths.php');
 | separate location so we can isolate the creation of an application
 | from the actual running of the application with a given request.
 | 
-| 这里我们将载入Illuminate应用程序，我们保持它在一个独立的位置，这样与我们创建的的应用程序隔离。
+| 在这里我们将载入Illuminate应用程序，我们保持它在一个独立的位置，这样与我们创建的的应用程序隔离。
 | 
 */
 
